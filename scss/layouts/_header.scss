@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  &.fixed {
+    position: fixed;
+    background-color: $white;
+    animation: slideDown 0.5s;
+    animation-fill-mode: both;
+
+    &.slideUp {
+      animation: slideUp 0.35s;
+      animation-fill-mode: both;
+    }
+
+    .header {
+      &__logo svg path {
+        fill: $primary;
+      }
+
+      &__item {
+        transition: $transition;
+        border-bottom: 0.1rem solid transparent;
+        
+        &.active,
+        &:hover {
+          border-bottom: 0.1rem solid $primary;
+        }
+
+        a {
+          color: $primary;
+        }
+      }
+
+      &__btn {
+        border: 0.1rem solid $primary;
+        color: $primary;
+
+        &:hover {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    svg {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+  }
+
+  &__item {
+    margin-right: 5.6rem;
+   
+    a {
+      color: $white;
+      border-bottom: 0.1rem solid transparent;
+      transition: $transition;
+      padding-bottom: 0.5rem;
+
+      &:hover {
+        border-bottom: 0.1rem solid $white;
+      }
+    }
+  }
+}

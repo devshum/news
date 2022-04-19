@@ -1,0 +1,8 @@
+.wrapper {
+  height: 100%;
+
+  &--center {
+    display: grid;
+    align-content: center;
+  }
+}

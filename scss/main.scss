@@ -1,0 +1,24 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "abstracts/animations";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/btn";
+@import "components/article";
+@import "components/swiper-arrows";
+@import "components/popup";
+@import "components/form";
+
+@import "layouts/header";
+@import "layouts/wrapper";
+@import "layouts/about";
+@import "layouts/services";
+@import "layouts/hero";
+@import "layouts/container";
+@import "layouts/industries";
+@import "layouts/studies";
+@import "layouts/insights";
+@import "layouts/footer";

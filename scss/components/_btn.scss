@@ -1,0 +1,122 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    background: unset;
+    font-weight: 500;
+    font-size: inherit;
+    cursor: pointer;
+    transition: $transition;
+    border: unset;
+    background: unset;
+    border: 0.1rem solid transparent;
+    width: max-content;
+  }
+
+  &--white {
+    color: $white;
+    border: 0.1rem solid $white;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+
+  &--black {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      border: 0.1rem solid $primary;
+      background-color: $white;
+      color: $primary;
+    }
+  }
+
+  &--small {
+    padding: 0.4rem 3.2rem;
+    height: 4.8rem;
+  }
+
+  &--big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.6rem 4rem;
+    height: 7.2rem;
+    line-height: 4rem;
+    font-weight: 500;
+  }
+
+  &--arrow {
+    padding: 1.6rem 4.7rem 1.6rem 4rem;
+    justify-content: space-between;
+
+    &:hover {
+      svg {
+        transform: translateX(0.3rem);
+
+        path {
+          fill: $primary;
+        }
+      }
+    }
+
+    svg {
+      margin-left: 2.9rem;
+      transition: $transition;
+    }
+  }
+}
+
+.text-btn {
+  display: flex;
+  align-items: center;
+  color: $white;
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover {
+    span {
+      border-bottom: 0.1rem solid $white;
+    }
+
+    svg {
+      transform: translateX(0.5rem);
+    }
+  }
+
+  
+  &--black {
+    span {
+      color: $primary;
+    }
+
+    svg {
+      path {
+        fill: $primary;
+      }
+    }
+
+    &:hover {
+      span {
+        border-bottom: 0.1rem solid $primary;
+      }
+    }
+  }
+
+  span,
+  svg {
+    transition: $transition;
+  }
+
+  span {
+    font-weight: 500;
+    line-height: 2.8rem;
+    margin-right: 2.1rem;
+    border-bottom: 0.1rem solid transparent;
+  }
+}
